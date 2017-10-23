@@ -1,4 +1,5 @@
 /*CLASES REUTILIZABLES*/
+/*
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -12,6 +13,7 @@
 }
 
 body {
+  font-family: 'Raleway', sans-serif;
   margin: 0 auto;
   font-size: 16px;
   line-height: 1.71429;
@@ -67,7 +69,264 @@ a:hover {
 
 .text-uppercase {
   text-transform: uppercase;
+}*/
+
+
+/*Mi código*/
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*ESCRIBE TU CÓDIGO DESDE AQUÍ*/
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.71429;
+}
+
+img {
+  vertical-align: middle;
+}
+
+
+.text-uppercase {
+  text-transform: uppercase;
+}
+
+/*Barra de navegador fija*/
+.container {
+  background: white;
+  width: 100%;
+  height: 98px;
+  left: 0;
+	top: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 14px;
+  padding-right: 14px;
+  position: fixed;
+}
+
+    .menu {
+      width: 100%;
+      height: 98px;
+      padding-left: 155px;
+      padding-top: 35px;
+    }
+
+    .container .menu a {
+      font-weight: bold;
+      color: #373B47;
+      text-decoration: none;
+      padding-right: 48px;
+      font-size: 16px;
+      font-weight: 700;
+      float: left;
+    }
+
+    .container .menu a:hover {
+      color: #E95853;
+      cursor: pointer;
+    }
+
+    .container img {
+      margin-right: 148px;
+      width: 70px;
+      height: 70px;
+      position: absolute;
+      float: right;
+      margin-top: 15px;
+      margin-left: 1110px;
+    }
+
+/* Primer contenido*/
+.main {
+  width: auto;
+  height: 537px;
+  margin-top: 80px;
+  background-image: url(../assets/images/bg-home.jpg);
+  background-size: 100%;
+  line-height: 0;
+  text-align: center;
+}
+
+      .main .text-uppercase h2{
+        padding-top: 112px;
+        font-size: 25px;
+        color: white;
+        font-weight: 700;
+      }
+      .main .text-uppercase h1{
+        padding-top: 70px;
+        font-size: 50px;
+        color: white;
+        font-weight: 700;
+      }
+      .main .text-uppercase p{
+        padding-top: 20px;
+        color: white;
+        font-weight: 300;
+      }
+      .main .text-uppercase a{
+        background: #2ECC71;
+        line-height: 10;
+        width: 150px;
+        height: 45px;
+        padding: 15px 20px 15px 20px;
+        color: white;
+        cursor:pointer;
+      }
+
+/*Sección de servicios*/
+.services {
+  background: #F17C72;
+  width: 100%;
+  height: 600px;
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+}
+    .services .text-services h2{
+      font-weight: 600;
+      font-size: 35px;
+    }
+    .services .text-services h6 {
+      font-weight:400;
+    }
+
+
+    .user {
+      line-height: 0;
+      margin-left: 220px;
+      margin-top: 50px;
+      float: left;
+    }
+
+        .user img{
+          width: 200px;
+          height: auto;
+          border-radius: 20px;
+        }
+
+    .concept {
+      line-height: 0;
+      margin-left: 158px;
+      margin-top: 50px;
+      float: left;
+    }
+
+        .concept img{
+          width: 200px;
+          height: auto;
+          border-radius: 20px;
+        }
+
+    .design {
+      line-height: 0;
+      margin-left: 158px;
+      margin-top: 50px;
+      float: left;
+    }
+
+        .design img {
+          width: 200px;
+          height: auto;
+          border-radius: 20px;
+        }
+
+/*Sección de Trabajos realizados*/
+.work {
+  width: auto;
+  height: auto;
+  margin-top: 80px;
+}
+    .text-work {
+      text-align: center;
+    }
+    .work .text-work h2 {
+      color: #191919;
+      font-size: 35px;
+      font-weight: 700;
+    }
+    .work .text-work h4 {
+      color: #252931;
+    }
+    .work img {
+      width: 900px;
+      height: auto;
+      padding-top: 20px;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .proyects {
+      margin-top: 10px;
+      margin-left: 128px;
+      text-align: center;
+      color: #424242;
+      font-weight: bold;
+      font-size: 15px;
+    }
+        .proyects img{
+          width: 299px;
+          height: auto;
+          margin-right: 35px;
+          margin-left: 35px;
+        }
+
+        .proyect-1 {
+          float: left;
+        }
+        .proyect-2 {
+          float: left;
+        }
+        .proyect-3 {
+          float: left;
+        }
+        .proyect-4 {
+          margin-top: 30px;
+          float: left;
+        }
+        .proyect-5 {
+          margin-top: 30px;
+          float: left;
+        }
+        .proyect-6 {
+          margin-top: 30px;
+          float: left;
+        }
+        .proyect-7 {
+          margin-bottom: 70px;
+          margin-top: 30px;
+          float: left;
+        }
+        .proyect-8 {
+          margin-bottom: 70px;
+          margin-top: 30px;
+          float: left;
+        }
+        .proyect-9 {
+          margin-bottom: 70px;
+          margin-top: 30px;
+          float: left;
+        }
+
+/*Pie de página*/
+.footer {
+  background: #373B47;
+  color: white;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 10px;
+  width: auto;
+  height: 70px;
+  clear: left;
+}
